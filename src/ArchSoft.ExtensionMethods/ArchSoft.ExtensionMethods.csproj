@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>ArchSoft.ExtensionMethods</PackageId>
+        <Version>1.0.0</Version>
+        <PackageReleaseNotes></PackageReleaseNotes>
+        <Authors>Ricardo de Luna Galdino</Authors>
+        <Company>ArchSoft</Company>
+        <Copyright>© 2023 ArchSoft</Copyright>
+        <Description>Library with a compilation of Extension Methods.</Description>
+        <PackageProjectUrl>http://www.archsoft.com.br</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/archsoft-br/pkg_extension-methods_dotnet</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>Extension Methods</PackageTags>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="SonarAnalyzer.CSharp" Version="9.10.0.77988">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <None Include="LICENSE" Pack="true" PackagePath=""/>
+        <None Include="README.md" Pack="true" PackagePath=""/>
+    </ItemGroup>
+
+</Project>
